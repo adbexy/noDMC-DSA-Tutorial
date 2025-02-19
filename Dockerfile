@@ -18,6 +18,8 @@ RUN apt-get install -y cmake git
 RUN apt-get install -y numactl libnuma-dev
 # for configuring DSA
 RUN apt-get install -y accel-config
+# dependency of DML
+RUN apt-get install -y uuid-dev
 # for plotting
 RUN apt-get install -y python3-seaborn
 
