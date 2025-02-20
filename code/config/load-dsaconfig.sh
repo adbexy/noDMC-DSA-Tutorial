@@ -5,6 +5,7 @@ if [ $(whoami) != "root" ]; then
 	exit;
 fi
 
+# disable devices for reconfiguration
 accel-config disable-device dsa0
 accel-config disable-device dsa1
 accel-config disable-device dsa2
@@ -14,6 +15,7 @@ accel-config disable-device dsa5
 accel-config disable-device dsa6
 accel-config disable-device dsa7
 
+# load configuration file
 accel-config load-config -c $1 -e
 
 # change access rights of the work queues to allow access for every user
