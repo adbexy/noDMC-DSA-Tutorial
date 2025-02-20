@@ -13,7 +13,7 @@ set(DML_PATH "../third_party/DML")
 set(DML_SOURCE_DIR "${DML_PATH}/include/")
 # make the linker find -ldml == libdml.a
 set(CMAKE_EXE_LINKER_FLAGS
-	"${CMAKE_EXE_LINKER_FLAGS} -Wl,-L${DML_PATH}/build/dml_install/lib")
+	"${CMAKE_EXE_LINKER_FLAGS} -Wl,-L${DML_PATH}/dml_install/lib")
 
 set(SOURCES memcpy_example.cpp)
 
